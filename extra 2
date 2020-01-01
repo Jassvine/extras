@@ -1,0 +1,45 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int highest, lowest, marks[30][5];
+	double total = 0, totalSub = 0, aveStu = 0, aveSub = 0;
+	for (int i = 0; i < 30; i++) //students 
+	{
+		cout << "student " << i << ":\n"; //input student w number
+		cout << "enter marks for 5 subjects: \n "; // prompt
+
+		for (int j = 0; j < 5; j++) //subjects
+		{
+			cin >> marks[i][j]; //input
+		}
+		total += [i][j]; //find total marks for each student
+		aveStu = total / 5.0; // find average marks of each student
+		cout << "the total marks for each student is " << total << "and the average marks of each student is " << aveStu << endl;
+
+	}
+	for (int j = 0; j < 5; j++)
+	{
+		min = marks[0][j];
+		max = marks[0][j];
+		for (int i = 0; i < 30; i++)
+		{
+			if (mark[i][j] < min)
+			{
+				min = mark[i][j];
+			}
+			if (mark[i][j] > max)
+			{
+				max = mark[i][j];
+			}
+		}
+		totSub += mark[i][j];
+		aveSub = totSub / 30.0;
+		cout << "subject " << j << endl;
+		cout << "the highest mark is " << max << endl;
+		cout << "the lowest mark is " << min << endl;
+		cout << "the average marks for each subject is  " << aveSub << endl;
+	}
+	return 0;
+}
