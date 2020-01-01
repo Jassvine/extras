@@ -1,0 +1,115 @@
+[2:11 PM, 12/24/2019] jassvine: #include <iostream>
+using namespace std;
+
+int main()
+{
+	int num[5][5] = { { 258,0,0,0,0 }, { 43, 301, 0, 0, 0 }, { 475, 217, 518, 0, 0 }, { 876, 616, 918, 401, 0 }, { 623, 365, 667, 148, 246 } };
+	for (int i = 0; i < 5; i++)
+	{
+
+		for (int i = 0; i < 5; i++)
+		{
+
+			if (i = 0)
+			{
+				cout << "ALOR SETAR";
+			}
+			else if (i = 1)
+			{
+				cout << "IPOH";
+			}
+			else if (i = 2)
+			{
+				cout << "KANGAR";
+			}
+			else if (i = 3)
+			{
+				cout << "KUALA LUMPUR";
+			}
+			else if (i = 4)
+			{
+				cout << "MERSING";
+			}
+			else
+			{
+				cout << "MELAKA";
+			}
+
+			for (int j = 0; j < 5; j++)
+			{
+				if (j = 0)
+				{
+					cout << "ALOR SETAR";
+				}
+				else if (j = 1)
+				{
+					cout << "IPOH";
+				}
+				else if (j = 2)
+				{
+					cout << "KANGAR";
+				}
+				else if (j = 3)
+				{
+					cout << "KUALA LUMPUR";
+				}
+				else if (j = 4)
+				{
+					cout << "MERSING";
+				}
+				else
+				{
+					cout << "MELAKA";
+				}
+				{
+					cout << "the distance from town1 , " << i << "and town2 " << j << "is " << [i][j] << endl;
+				}
+			}
+		}
+	}
+}
+[7:44 PM, 12/24/2019] jassvine: #include <iostream>
+using namespace std;
+
+int main()
+{
+	int highest, lowest, marks[30][5];
+	double total = 0, totalSub = 0, aveStu = 0, aveSub = 0;
+	for (int i = 0; i < 30; i++) //students 
+	{
+		cout << "student " << i << ":\n"; //input student w number
+		cout << "enter marks for 5 subjects: \n "; // prompt
+
+		for (int j = 0; j < 5; j++) //subjects
+		{
+			cin >> marks[i][j]; //input
+		}
+		total += [i][j]; //find total marks for each student
+		aveStu = total / 5.0; // find average marks of each student
+		cout << "the total marks for each student is " << total << "and the average marks of each student is " << aveStu << endl;
+
+	}
+	for (int j = 0; j < 5; j++)
+	{
+		min = marks[0][j];
+		max = marks[0][j];
+		for (int i = 0; i < 30; i++)
+		{
+			if (mark[i][j] < min)
+			{
+				min = mark[i][j];
+			}
+			if (mark[i][j] > max)
+			{
+				max = mark[i][j];
+			}
+		}
+		totSub += mark[i][j];
+		aveSub = totSub / 30.0;
+		cout << "subject " << j << endl;
+		cout << "the highest mark is " << max << endl;
+		cout << "the lowest mark is " << min << endl;
+		cout << "the average marks for each subject is  " << aveSub << endl;
+	}
+	return 0;
+}
