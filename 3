@@ -1,0 +1,41 @@
+include "pch.h"
+#include <iostream>
+#include <iomanip>
+using namespace std;
+void getData (int&, int&, int&); //function declarations with pass by refrence 
+void calculate(double, double, double,double&); //average is calculated w pass by refernce values
+void displayAverageAcceleration(double, double, double,int); 
+int main()
+{
+	int v0, v1, t; //initialising
+	double average;
+	getData(v0, v1, t); //function call for getData
+	double x = v0; //int v0 is copied into x as a double value
+	double y = v1; //int v1 is copied into y as a double value
+	double z = t; //int t is copied into z as a double value
+	calculate(x, y, z, average); //function call for calculate
+	displayAverageAcceleration(v0, v1, t, average); //function call for displayAveragAcceleration
+	return 0;
+}
+
+
+	void getData(int& x, int& y, int&z)
+	{
+		cout << "input initial velocity in m/s square/n";
+		cin >> x;
+		cout << "input final velocity in m/s square/n";
+		cin >> y;
+		cout << "input time taken in seconds\n";
+		cin >> z;
+	}
+
+
+	void calculate(double, double, double, double& average)
+	{
+		average = (v1 - v0) / t;
+	}
+
+	void displayAverageAcceleration(double, double, double, double)
+	{
+		std::cout<< std::setprecision(2) << "the average acceleration needed to accelerate a car from" << x << "km/h to " << y << "km/h in " << z << "seconds is " << average << "m/s square" << endl;
+	}
